@@ -14,7 +14,7 @@ public class CameraBehavior : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         this.transform.position = _target.TransformPoint(CamOffset);
         this.transform.LookAt(_target);
